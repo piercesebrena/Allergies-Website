@@ -1,0 +1,315 @@
+
+:root{
+
+ @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+  /* #df6d29-Orange */
+ /* #F0E5D3-Cream  */
+ /* #FFE585-Light Yellow */
+ /*  #F6B092-Peach*/
+ /* #000000-Black */
+ /* #084D26-Green Forest */
+ /* #d3efde-mint green */
+ /* #765341-chocolate brown */
+ /* #276E7B-green  Primary
+  /* E19C5A-gold yellow */ 
+  /* F7F7E-egg cream */
+  /* FFF0DE*/
+}
+
+body {
+    background-image: linear-gradient(to right, #FFA876 0%, #FFA876 50%, #FFF0DE 50%, #FFF0DE 100% ); 
+    margin: 0px;
+    padding: 0px;
+}
+
+.header__nav {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6B092;
+    width: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 5px solid #000000;
+    border-radius: 0px 0px 0px 0px;
+    /* Top left bottom right */
+    border-color: #084D26;
+}
+
+.header__logo {
+    flex: 1;
+    display: flex;
+
+    position: relative;
+    padding: 20px;
+}
+
+.header__logo overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background-color: #B24A3B;
+}
+
+
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-decoration: wavy ;
+    color: #B24A3B;
+    list-style: none;
+}
+
+.home-content{
+    flex:1.22;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0px;
+    color: #B24A3B;
+    letter-spacing: 1px;
+}
+
+.home-content-info{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+    letter-spacing: 1px;
+    font:linear-gradient(var(--white), var(--light-teal), var(--teal))
+}
+
+.home-content-info h1{
+    font-size: 20px;
+    font: weight 400px;
+    font-family: Playfair Display;
+}
+
+.hero-content-info p {
+    margin: 32px 0 0 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    display: block;
+    width: auto;
+    align-content: left;
+    border: 5px solid #000000;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #FCCF14;
+    height: 250px;
+    box-sizing: content-box;
+    padding: 30px; 
+    padding-right: 30px; 
+    padding-top: 0px;
+    background-color:#F7F7E7;    
+}
+
+.container-a{
+    display: block;
+    width: 600px;
+    align-items: center;
+    border: 5px solid #000000;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #FCCF14;
+    height: 370px;
+    box-sizing: content-box;
+    padding: 10px;
+    background-color: #F7F7E7;
+}
+
+.container-p{
+    display: block;
+    width: 30%;
+    margin: 32px 0 0 0;
+    border: 5px solid #000000;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #FCCF14;
+    height: 300px;
+    box-sizing: content-box;
+    padding: 20px; 
+    padding-right: 30px; 
+    padding-top: 30pxpx;
+    background-color:#F7F7E7; 
+    font-size: x-large;  
+    text-align: center;
+}
+
+.container-con{
+    display: inline-block;
+    width: 40%;
+    margin: 32px 0 0 0;
+    border: 5px solid #000000;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #FCCF14;
+    height: 300px;
+    box-sizing: content-box;
+    padding: 20px; 
+    padding-right: 30px; 
+    padding-top: 30pxpx;
+    background-color:#F7F7E7; 
+    font-size: x-large;  
+   
+
+
+}
+
+.container-pro{
+    display: block;
+    width: 30%;
+    margin: 32px 0 0 0;
+    border: 5px solid #000000;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #FCCF14;
+    height: 500px;
+    box-sizing: content-box;
+    padding: 20px; 
+    padding-right: 30px; 
+    padding-top: 30pxpx;
+    background-color:#F7F7E7; 
+    font-size: x-large;  
+    text-align: center;
+}
+
+
+form {
+    border: 3px solid ;
+    margin: 0;
+    width: 50%;
+    height: 70%;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color:#B24A3B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+
+
+.circle {
+    height: 130px;
+    width: 140px;
+    border: 5px solid;
+    background-color: #ffae42;
+    border-radius: 50%;
+    color:#084D26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Playfair;
+    float: right;
+}
+
+
+.footer-container{
+    background-color: #B24A3B;
+    color: #FFFFFF;
+    width: 100%;
+    height: 50%;
+    border-top: 5px solid #FCCF14;  
+    display: flex;
+    justify-content: space-between;
+}
+ 
+
+/* Link for nav */
+.footer-container a {
+    color: #FFFFFF;
+}
+
+.footer-container ul{
+    list-style-type:  none;
+}
+
+.footer-text{
+    font: size 16px;  
+    color: #FFFFFF;
+}
+
+.footer-container li{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* footer media queries */
+@media  screen and (min-width:320px) and (max-width:768px) {
+    .footer-container{
+        flex-direction: column;
+    }    
+}
+
+/* /*MAKE A GRADIENT FONT FOR ALL OF THE HEADERS */
+
+
+
+  
+
