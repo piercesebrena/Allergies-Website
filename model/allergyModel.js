@@ -3,22 +3,17 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const allergySchema = new Schema({
-  firstName: {
+  name: {
     type: String,
-    required: [true, "A first name is required"],
+    required: [true, "A first and last name is required."],
     minLength: [1, "Minimum one character"],
   },
-  lastName: {
+  email: {
     type: String,
-    required: [true, "A last name is required"],
+    required: [true, "An email is required"],
     minLength: [1, "Minimum one character"],
   },
-  birthYear: {
-    type: Number,
-    required: [true, "The birth year is required"],
-    minLength: [4, "Enter full year of birth"],
-    maxLength: [4, "Enter full year of birth"],
-  },
+
   bio: {
     type: String,
     required: [true, "A bio is required"],
