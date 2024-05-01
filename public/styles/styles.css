@@ -19,6 +19,7 @@
 
 body {
     background-image: linear-gradient(to right, #FFA876 0%, #FFA876 50%, #FFF0DE 50%, #FFF0DE 100% ); 
+    background-image: ;
     margin: 0px;
     padding: 0px;
 }
@@ -134,7 +135,7 @@ body {
     box-sizing: content-box;
     padding: 20px; 
     padding-right: 30px; 
-    padding-top: 30pxpx;
+    padding-top: 30px;
     background-color:#F7F7E7; 
     font-size: x-large;  
     text-align: center;
@@ -170,7 +171,7 @@ body {
     box-sizing: content-box;
     padding: 20px; 
     padding-right: 30px; 
-    padding-top: 30pxpx;
+    padding-top: 30px;
     background-color:#F7F7E7; 
     font-size: x-large;  
     text-align: center;
@@ -211,14 +212,14 @@ form {
   }
   
   /* Extra style for the cancel button (red) */
-  .cancelbtn {
+  .cancel-btn {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
   }
   
   /* Center the avatar image inside this container */
-  .imgcontainer {
+  .img container {
     text-align: center;
     margin: 24px 0 12px 0;
   }
