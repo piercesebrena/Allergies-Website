@@ -11,8 +11,8 @@ const cors = require("cors");
 app.use(morgan("dev"));
 
 
- const webRoutes = require('./routes/adminRouter'); // For admin routes
- const allRoutes = require('./routes/siteRouter'); //Define the routing variable for siteRoutes
+//  const webRoutes = require('./routes/adminRouter'); // For admin routes
+ const allRoutes = require('./routes/allRoutes'); //Define the routing variable for siteRoutes
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -24,8 +24,8 @@ app.get("/", (request, response, next) => {
 
 
 
-app.use(webRoutes); 
-app.use(allRoutes); //Tell the app to use the routing variables you defined earlier, siteRoutes 
+// app.use(webRoutes); 
+app.use("/",allRoutes); //Tell the app to use the routing variables you defined earlier, siteRoutes 
 
 app.listen(PORT, () => {
   console.log(`Personal project server is listening on port ${PORT}`);
