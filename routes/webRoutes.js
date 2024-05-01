@@ -15,4 +15,9 @@ const router = express.Router();
 
 // router.get("/logout", logout);
 
+router.get("/profile", (request, response, next) => {
+    response.json("We are on the profile page.");
+});
+
 module.exports = router;
+

@@ -25,7 +25,7 @@ app.get("/", (request, response, next) => {
 
 
 // app.use(webRoutes); 
-app.use("/",allRoutes); //Tell the app to use the routing variables you defined earlier, siteRoutes 
+app.use("",allRoutes); //Tell the app to use the routing variables you defined earlier, siteRoutes 
 
 app.listen(PORT, () => {
   console.log(`Personal project server is listening on port ${PORT}`);

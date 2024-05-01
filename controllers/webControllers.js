@@ -1,3 +1,10 @@
 // These are changes that NEED AUTHENTICATION.I am the manager so I can access these,but regular people can't.
 // Register login /logout.
 // profile
+
+const profile = async (request, response, next) => {
+    response.json(200).json({success:
+        {message:"We made it to the profile page."},
+        statusCode:200
+    })
+}

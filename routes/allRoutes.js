@@ -4,26 +4,22 @@ const express = require("express");
 
 const router = express.Router();
 
-const {about} = require("../controllers/allController");
+const {about, allersense, contact, home} = require("../controllers/allController");
 
 
 // Simple test
 router.get("/about", about);
-// router.get("", (request, response, next) => {
-//     response.json("");
-// });
-// router.get("", (request, response, next) => {
-//     response.json("");
-// });
-// router.get("", (request, response, next) => {
-//     response.json("");
-// });
-// router.get("", (request, response, next) => {
-//     response.json("");
-// });
-// router.get("", (request, response, next) => {
-//      response.json("");
-// });
+
+ router.get("/allersense", allersense);
+
+ router.get("/contact", contact);
+
+ router.get("/home", home);
+ 
+
+
+
+
 
 
 // Final version 
