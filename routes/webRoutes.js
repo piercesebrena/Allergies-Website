@@ -3,21 +3,29 @@ const express = require("express");
 
 const router = express.Router();
 
-// const { register, login, logout } = require("../controllers/webController");
+ const {profile, register, login, logout } = require("../controllers/webController");
 
-// router.post("/register", register);
+//  router.post("/register", register);
+ 
+ router.get("/register",register);
 
-// router.post("/login", login);
+ router.get("/login",login);
 
-// router.get("/login/error", (request, response, next) => {
-    // response.json("Login error");
-// });
+//  router.post("/login", login);
 
-// router.get("/logout", logout);
+ router.get("/login/error", (request, response, next) => {
+     response.json("Login error");
+ });
 
-router.get("/profile", (request, response, next) => {
-    response.json("We are on the profile page.");
-});
+router.get("/logout", logout);
+
+router.get("/profile", profile);
+    
+
+
+
+
+
 
 module.exports = router;
 
