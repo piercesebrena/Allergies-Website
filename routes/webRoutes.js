@@ -3,8 +3,8 @@ const express = require("express");
 
 const router = express.Router();
 
- const {profile, register, login, logout } = require("../controllers/webController");
-
+ const {profile, register, login, logout } = require("../controllers/webControllers");
+// All paths will start with /admin as a string."/admin/..."
 //  router.post("/register", register);
  
  router.get("/register",register);

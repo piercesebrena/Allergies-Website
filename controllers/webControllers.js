@@ -4,14 +4,14 @@
 
 
 const profile = async (request, response, next) => {
-    response.json(200).json({success:
+    response.status(200).json({success:
         {message:"We made it to the profile page."},
         statusCode:200
     })
 }
 
 const login = async (request, response, next) => {
-    response.json(200).json({success:
+    response.status(200).json({success:
         {message:"This is the login page."},
         statusCode:200
 
@@ -19,15 +19,17 @@ const login = async (request, response, next) => {
 }
 
 const logout = async (request, response, next) => {
-    response.json(200).json({success:
+    response.status(200).json({success:
         {message:"This is the logout page."},
+        statusCode:200
     })
 }
 
 const register = async (request, response, next) => {
-    response.json(200).json({success:
+    response.status(200).json({success:
         {message:"This is the page to register."},
+        statusCode:200
     })
 } 
 
-module.exports = {profile,login,logout,register}
+module.exports = {profile,register,login,logout,}
