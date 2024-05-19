@@ -1,4 +1,10 @@
-// about,allersense,contact,home,hub
+// about,allersense,contact,home,hub NO AUTHENTICATION!!
+
+const Data = require('../data/data.js');
+const Allergy =  require('../models/allergyModel');
+
+
+
 const about = async (request, response, next) => {
     // response.send ("We made it to the about page.")
     response.status(200).json({success:
