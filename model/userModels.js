@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-//const passport = require("passport"); //will define in Auth unit
+const passport = require("passport"); //will define in Auth unit
 
 const { Schema } = mongoose;
 
