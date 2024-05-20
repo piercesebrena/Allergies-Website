@@ -21,35 +21,10 @@ router.get("/logout", logout);
 
 router.get("/profile", profile);
 
-const checkAuthentication = (request, response, next) => {
-    if (request.isAuthenticated()) {
-        return next();
-    } else {
-        response.redirect(403, "/unautheticated")
-    }
-    }
+
+// router.get('/login/local/failed', loginLocalFailed);
 
 
-router.post('/login/local', passport.authenticate('local', {
-    failureRedirect: '/login/local/failed'
-}), (req, res) => {
-    res.status(200).json({
-        status: "success",
-        statusCode: 200,
-        message: "User logged in",
-        data: {
-            username: req.user.username,
-            firstName: req.user.firstName,
-            lastName: req.user.lastName
-        }
-    });
-});
-
-router.get('/login/local/failed', loginLocalFailed);
-
-router.get('/logout', logoutRequest);
-
-router.post('/signup', signupRequest);
 
 // GitHub Strategy
 router.get('/login/github', passport.authenticate('github'));

@@ -23,11 +23,11 @@ router.get("/about", about);
 
 
 // Final version 
-// router.get("", (request, response, next) => {
+//  router.get("", (request, response, next) => {
 //     response.status().json("");
-// });
+//  });
 
-//  router.get("/", handlerFunctions); 
+//   router.get("/", handlerFunctions); 
 //  Copy this code,when you have controllers set up.
 
 module.exports = router;

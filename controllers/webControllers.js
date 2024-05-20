@@ -3,7 +3,7 @@
 // profile
 const bcrypt = require("bcrypt");
 
-const User = require("../models/userModel");
+const User = require("../model/userModel.js");
 
 
 
@@ -36,4 +36,4 @@ const register = async (request, response, next) => {
     })
 } 
 
-module.exports = {profile,register,login,logout,}
+module.exports = {profile,register,login,logout}

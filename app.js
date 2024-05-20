@@ -24,7 +24,7 @@ app.get("/", (request, response, next) => {
 
 
 
-app.use("/admin",webRoutes); 
+app.use("",webRoutes); 
 app.use("",allRoutes); //Tell the app to use the routing variables you defined earlier, siteRoutes 
 
 app.listen(PORT, () => {

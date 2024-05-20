@@ -1,12 +1,11 @@
 // about,allersense,contact,home,hub NO AUTHENTICATION!!
 
 const Data = require('../data/data.js');
-const Allergy =  require('../models/allergyModel');
+const Allergy =  require('../model/allergyModel.js');
 
 
 
 const about = async (request, response, next) => {
-    // response.send ("We made it to the about page.")
     response.status(200).json({success:
         {message:"We made it to the about page."},
         statusCode:200
