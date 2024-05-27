@@ -1,5 +1,5 @@
 // about,allersense,contact,home,hub NO AUTHENTICATION!!
-
+//Create a contact
 const Data = require('../data/data.js');
 const Allergy =  require('../model/allergyModel.js');
 
@@ -18,7 +18,6 @@ const allersense = async (request, response, next) => {
         statusCode:200
     })
 }
-// The contact page should mimic GetAllBooks using the allergy model. Parameter for reading is going to be allergies like in my database.
 const contact = async (request, response, next) => {
     response.status(200).json({success:
         {message:"We made it to the contact page."},
