@@ -33,9 +33,9 @@ const createProfile = async (req, res) => {
 
     try {
         await newUser.save();
-        res.status(201).json({ success: true, message: "A new user profile is created", data: newUser, statusCode: 201 });
+        res.status(200).json({ success: true, message: "A new user profile is created", data: newUser, statusCode: 200 });
     } catch (error) {
-        res.status(400).json({ success: false, message: "Something happened while creating a user profile", error: error.message, statusCode: 400 });
+        res.status(200).json({ success: false, message: "Something happened while creating a user profile", error: error.message, statusCode: 400 });
     }
 };
 
@@ -48,7 +48,7 @@ const getProfile = async (req, res) => {
         }
         res.status(200).json({ success: true, data: user });
     } catch (error) {
-        res.status(500).json({ success: false, message: error.message });
+        res.status(200).json({ success: false, message: error.message });
     }
 };
 
@@ -69,7 +69,7 @@ const updateProfile = async (req, res) => {
 
         res.status(200).json({ success: true, message: "User profile updated", data: user });
     } catch (error) {
-        res.status(500).json({ success: false, message: error.message });
+        res.status(200).json({ success: false, message: error.message });
     }
 };
 
@@ -84,7 +84,7 @@ const deleteProfile = async (req, res) => {
         await user.remove();
         res.status(200).json({ success: true, message: "User profile has been deleted" });
     } catch (error) {
-        res.status(500).json({ success: false, message: error.message });
+        res.status(200).json({ success: false, message: error.message });
     }
 };
 
