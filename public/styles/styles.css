@@ -15,11 +15,12 @@
   /* E19C5A-gold yellow */ 
   /* F7F7E-egg cream */
   /* FFF0DE*/
+  /* D7E6DD-sea green */
 }
 
 body {
     background-image: linear-gradient(to right, #FFA876 0%, #FFA876 50%, #FFF0DE 50%, #FFF0DE 100% ); 
-    background-image: ;
+    background-image: url() ;
     margin: 0px;
     padding: 0px;
 }
