@@ -703,6 +703,87 @@ contact-box{
   border-radius: 50px;
 }
 
+/* Mood Checker*/
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8ed;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  color: #03A688;
+}
+
+/* Mood Icons */
+.mood-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.mood-icon {
+  background-color: #e3f9f5;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mood-icon:hover {
+  background-color: #b3e6d9;
+}
+
+.mood-icon i {
+  font-size: 30px;
+  color: #03A688;
+  line-height: 60px;
+}
+
+/* Selected Mood Display */
+.selected-mood {
+  margin-top: 20px;
+}
+
+.current-mood {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* Mood Colors */
+.current-mood.happy {
+  background-color: #ffd700; /* Yellow */
+}
+
+.current-mood.neutral {
+  background-color: #b0c4de; /* Light Blue */
+}
+
+.current-mood.sad {
+  background-color: #f08080; /* Light Coral */
+}
+
 
 
 
