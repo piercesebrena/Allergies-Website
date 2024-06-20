@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -11,24 +11,51 @@
     <title>Pollen Pals</title>
 </head>
 <body>
-    <header>
-        <nav class="header__nav">
-            <div class="header__logo">
-                <img src="public/images/Green Black & White Bold Monstera Plant Nursery Plant Logo-2-2.png" alt="pollen" width="275px">
-                <div
-                class="header__logo-overlay"></div>
-            </div>
-
-            <ul class="header__menu">
-                <li><a href="about.html">About</a></li>
-                <li><a href="allersense.html">Allersense</a></li>  
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="hub.html">Hub</a></li>
-                <li><a href="profile.html">Profile</a></li> 
-                <li><a href="contact.html">Contact</a></li>
+        <header>
+            <ul>
+                 <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="allersense.html">Allersense</a></li>  
+                    <li><a href="hub.html">Hub</a></li>
+                    <li><a href="profile.html">Profile/Login</a></li> 
+                    <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+        </header>
 
+    
+    <div class="container">
+        <h1>Login</h1>
+        <br>
+        <form action="profile.html" method="post">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 
         <div class="home-content">
             <div class="home-content-info">
                 <div class="form">
@@ -50,14 +77,18 @@
                       <label>
                         <input type="checkbox" checked="checked" name="remember"> Remember me
                       </label>
-                    </div>
+                    <!-- </div> -->
+                     
+
+
+                
 
 
                          
     <footer class="footer-container">
         <div>
-            <h3 class="white-text">ABOUT US</h3>
-            <p class="footer-text">HUB</p>
+            <h3 class="white-text">About Us</h3>
+            <p class="footer-text">Hub</p>
             <p class="footer-text">Allersense</p>
             <p class="footer-text">Awards System</p>
             
