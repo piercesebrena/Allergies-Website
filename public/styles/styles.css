@@ -269,7 +269,7 @@ form {
     float: right;
 }
 
-
+/* /* 
 .footer-container{
     background-color: #B24A3B;
     color: #FFFFFF;
@@ -282,7 +282,7 @@ form {
  
 
 /* Link for nav */
-.footer-container a {
+/* .footer-container a {
     color: #FFFFFF;
 }
 
@@ -307,10 +307,86 @@ form {
         flex-direction: column;
     }    
 }
-
-/* /*MAKE A GRADIENT FONT FOR ALL OF THE HEADERS */
-
+  */
 
 
-  
+
+
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Footer styling */
+.footer-container {
+  background-color: #FCCF14; /* Replace with your color */
+  color: #000000; /* Replace with your color */
+  text-align: center;
+  color: #000000;
+  padding: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 1em 0;
+}
+
+.footer-title {
+  color: #000000; /* Ensure text is white */
+  margin-bottom: 0.5em;
+}
+
+.footer-text {
+  margin: 0.5em 0;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 0 0.5em;
+}
+
+.social-icons a {
+  color: #FFFFFF; /* Replace with your color */
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #FFDD57; /* Replace with your hover color */
+}
 
