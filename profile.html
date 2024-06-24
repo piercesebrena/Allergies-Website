@@ -23,6 +23,124 @@
             </ul>
         </header>
 
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login, Logout, and Profile Page</title>
+    <script>
+        function showLoginMessage(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            alert('Login successful!!!');
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('profile').style.display = 'block';
+            document.getElementById('logout').style.display = 'block';
+        }
+
+        function handleLogout(event) {
+            alert('You have been logged out');
+            document.getElementById('login').style.display = 'block';
+            document.getElementById('profile').style.display = 'none';
+            document.getElementById('logout').style.display = 'none';
+        }
+        document.getElementById('profile-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    alert('Profile saved successfully');
+});
+    
+function showLoginMessage(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    alert('Login successful');
+    document.getElementById('login').style.display = 'none';
+    document.getElementById('profile').style.display = 'block';
+    document.getElementById('logout').style.display = 'block';
+}
+
+function handleLogout(event) {
+    alert('You have been logged out');
+    document.getElementById('login').style.display = 'block';
+    document.getElementById('profile').style.display = 'none';
+    document.getElementById('logout').style.display = 'none';
+}
+
+    </script>
+</head>
+<body>
+    <div class="container" id="login">
+        <h1>Login</h1>
+        <br>
+        <form onsubmit="showLoginMessage(event)">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container" id="profile">
+        <h1>Profile</h1>
+        <div class="avatar">
+            <img src="./public/images/Profile LOGOS.png" alt="Avatar" height="500px" width="200px">
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="profile-email" name="email" value="jane.doe@example.com">
+            </div>
+            <div class="form-group">
+                <label for="allergies">Allergies:</label>
+                <input type="text" id="allergies" name="allergies" value="Pollen, Dust">
+            </div>
+            <div class="form-group">
+                <label for="medications">Medications:</label>
+                <input type="text" id="medications" name="medications" value="Antihistamines">
+            </div>
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <input type="text" id="hobbies" name="hobbies">
+            </div>
+            <div class="form-group">
+                <label for="advice">Advice:</label>
+                <textarea id="advice" name="advice"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container" id="logout">
+        <button onclick="handleLogout()">Logout</button>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
     
     <div class="container">
         <h1>Login</h1>
@@ -44,9 +162,9 @@
     <br>
     
 </body>
-</html>
+</html> -->
 
-
+<!-- 
 <footer class="footer-container">
     <div class="footer-section">
         <h3 class="footer-title">About Us</h3>
@@ -85,7 +203,7 @@
 
 
 
-
+ -->
 
         <!-- 
         <div class="home-content">
